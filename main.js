@@ -11,7 +11,7 @@ var ernameSize = document.getElementById("ernameSize");
 var erphoneString = document.getElementById("erphoneString");
 var eremail = document.getElementById("eremail");
 var ertxtSize = document.getElementById("ertxtSize");
-
+// https://script.google.com/macros/s/AKfycbxvqPjTWBVAM2xGvNWZhejT6U1NwhvkafP6OgdikMAXNasSwhyZbTYc1tgvaLihezL2/exec
 
 form.addEventListener('submit', (e) =>{
   //  console.log(named.value);
@@ -19,17 +19,13 @@ form.addEventListener('submit', (e) =>{
    // console.log(email.value);
     //console.log(textarea.value);
     //console.log(errmsg)
-    hideAllerr();
+    hideAllerr()
     checkAllEmpty()
     checkName()
-    
     checkPhone()
-   
     checkEmail()
    checkTextarea()
     performSubmit()
-
-
     e.preventDefault()  
 })
 function checkAllEmpty() {
@@ -106,6 +102,7 @@ function performSubmit(){
         hideAllerr();
         clearAll()
         displayErrMsg(submitSuccess)
+        document.ge
         
         
     }
