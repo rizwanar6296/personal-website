@@ -1,4 +1,4 @@
-var form =  document.getElementsByClassName('valform');
+var form =  document.getElementById('valform');
 
 var named =  document.getElementById("inputName")
 var number = document.getElementById("inputNumber")
