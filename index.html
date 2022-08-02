@@ -313,33 +313,37 @@
 					<div class="container p-0">
 						<div class="box">
 							<!--  -->
-							<form  id="valform" action="" >
-								<div class="form-group my-3">
-									<input type="text" class="form-control" name="name" id="inputName" placeholder="Enter your Name">
+							<form id="form" name="form" method="post" onsubmit="return validate();" action=" https://script.google.com/macros/s/AKfycbxvqPjTWBVAM2xGvNWZhejT6U1NwhvkafP6OgdikMAXNasSwhyZbTYc1tgvaLihezL2/exec">
+								<div class="row">
+								  <div class="col-md-12 mb-3">
+									<div >
+									  <input type="text" name="name" id="name1" placeholder="Your Name" >
+									</div>
+								  </div>
+								  <div class="col-md-12 mb-3">
+									<div >
+									  <input type="text" class="form-control" name="email" id="email" placeholder="Your Email" >
+									</div>
+								  </div>
+								  <div class="col-md-12 mb-3">
+									<div >
+									  <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone" >
+									</div>
+								  </div>
+								  <div class="col-md-12">
+									<div class="form-group">
+									  <textarea id="message" class="form-control" name="message" rows="5" placeholder="Message" ></textarea>
+									</div>
+								  </div>
+								  <br>
+								  <br>
+								  <br>
+								  <br>
+								  <div class="col-md-12 text-center">
+									<button onclick="validate()" class="btn btn-primary" button-a button-big button-rouded type="submit" >Send Message</button>
+								  </div>
 								</div>
-								<div class="form-group my-3">
-									<input type="text" class="form-control" name="number" id="inputNumber" placeholder="Phone number">
-								</div>
-								<div class="form-group my-3">
-									<input type="text" class="form-control" name="email" id="inputEmail" placeholder="Enter your email">
-								</div>
-								<div class="form-group my-3">
-									<textarea class="form-control" name="message"  id="inputTextarea" rows="3"></textarea>
-								</div>
-								<div class="button">
-									<button class="buttun" id="send" type="submit">Send</button>
-								</div>
-								<div id="eremty" style="display:none" class="text-danger">please fill all the fields
-								</div>
-								<div id="ernameSize" style="display:none" class="text-danger">name should between 3 and 20 </div>
-
-								<div id="erphoneString" style="display:none" class="text-danger">please enter phone
-									number with 10 digits </div>
-								<div id="eremail" style="display:none" class="text-danger">email is not valid</div>
-								<div id="ertxtSize" style="display:none" class="text-danger">desciption :minimum 10
-									charecters maximum 200 charecters </div>
-								<div class="text-success" id="submitSuccess" style="display:none">Form Submitted Successfully</div>
-							</form>
+							  </form>
 						</div>
 					</div>
 				</div>
